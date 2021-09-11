@@ -30,6 +30,7 @@
 html {
     box-sizing: border-box;
     font-family: 'PF Din Text Comp Pro Thin';
+    
 }
 /* general */
 .navbar {
@@ -421,18 +422,11 @@ h2 {
 /* section_5 */
 .section_5 {
   position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 .section_5 .container {
   padding-top: 54px;
-}
-.parent_img {
-  padding: 41px 0;
-}
-.paragr_adv {
-  color: #7d7d7d;
-  font-family: "PF Din Text Comp Pro - Thin";
-  font-size: calc((100vw - 320px) / (1920 - 320) * (24 - 18) + 18px);
-  margin-bottom: 47px;
 }
 .section_5::after {
   position: absolute;
@@ -444,15 +438,14 @@ h2 {
   z-index: -1;
   background: url(../images/section_5/products.png) no-repeat;
 }
-.section_5::before {
-  position: absolute;
-  content: "";
-  right: -327px;
-  bottom: 0;
-  width: 887px;
-  height: 637px;
-  z-index: -1;
-  background: url(../images/section_5/cottage_cheese+dough.png) no-repeat;
+.parent_img {
+  padding: 41px 0;
+}
+.paragr_adv {
+  color: #7d7d7d;
+  font-family: "PF Din Text Comp Pro - Thin";
+  font-size: calc((100vw - 320px) / (1920 - 320) * (24 - 18) + 18px);
+  margin-bottom: 47px;
 }
 .video {
   margin-bottom: 90px;
@@ -496,5 +489,15 @@ h2 {
     width: 204px;
     height: 323px;
     background: url(../images/section_2/girl.png) no-repeat;
+  }
+  .section_5::before {
+    position: absolute;
+    content: "";
+    right: -327px;
+    bottom: 0;
+    width: 887px;
+    height: 637px;
+    z-index: -1;
+    background: url(../images/section_5/cottage_cheese+dough.png) no-repeat;
   }
 }
