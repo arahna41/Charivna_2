@@ -480,9 +480,6 @@ h2 {
 
 
 
-
-
-
 @media screen and (min-width: 992px) {
   .container_section_2::before {
     position: absolute;
