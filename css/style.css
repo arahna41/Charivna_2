@@ -1,49 +1,45 @@
+@font-face {
+  font-family: "PF Din Text Comp Pro Thin";
 
-@font-face{
+  src: url("../fonts/pfdintextcomppro-thin.ttf");
 
-  font-family: 'PF Din Text Comp Pro Thin';
-  
-  src: url('../fonts/pfdintextcomppro-thin.ttf');
-  
-  src: url('../fonts/pfdintextcomppro-thin.ttf') format('truetype');
-  
+  src: url("../fonts/pfdintextcomppro-thin.ttf") format("truetype");
+
   font-weight: normal;
-  
-  font-style: normal;
-  
-  }
-  @font-face{
 
-    font-family: 'Flow';
-    
-    src: url('../fonts/ofont.ru_Flow.ttf');
-    
-    src: url('../fonts/ofont.ru_Flow.ttf') format('truetype');
-    
-    font-weight: normal;
-    
-    font-style: normal;
-    
-    }
+  font-style: normal;
+}
+@font-face {
+  font-family: "Flow";
+
+  src: url("../fonts/ofont.ru_Flow.ttf");
+
+  src: url("../fonts/ofont.ru_Flow.ttf") format("truetype");
+
+  font-weight: normal;
+
+  font-style: normal;
+}
 /* css reset */
 
 /* general */
 html {
-    box-sizing: border-box;
-    font-family: 'PF Din Text Comp Pro Thin';
+  box-sizing: border-box;
+  font-family: "PF Din Text Comp Pro Thin";
 }
 h5 {
-  color: #c8a674;
+  color: #caa977;
   font-family: "PF Din Text Comp Pro";
   font-size: 22px;
   font-weight: 500;
 }
 .navbar {
-    background-color: #65baaf;
-    text-align: right;
-    align-items: flex-start;
+  background-color: #65baaf;
+  text-align: right;
+  align-items: flex-start;
 }
-.contacts, .menu {
+.contacts,
+.menu {
   justify-content: space-between;
 }
 .tel {
@@ -51,7 +47,7 @@ h5 {
   width: 35px;
   height: 35px;
   border-radius: 50%;
-} 
+}
 .tel::after {
   content: "";
   background: url(../images/header/tel.png) no-repeat;
@@ -61,7 +57,6 @@ h5 {
   left: 8px;
   position: absolute;
   border: none;
-
 }
 .dropdown-item {
   color: #65baaf;
@@ -112,7 +107,7 @@ h5 {
   top: 24px;
   left: 19px;
   transform: rotate(45deg);
-  position: absolute
+  position: absolute;
 }
 .lang {
   position: relative;
@@ -163,16 +158,13 @@ h5 {
   display: block;
 }
 
-
-
 /* desctop_header_style */
 .desctop_header {
   justify-content: space-between;
   padding-top: 13px;
 }
 .desctop_header a {
-  font-family: 'PF Din Text Comp Pro Thin';
-  
+  font-family: "PF Din Text Comp Pro Thin";
 }
 .contacts {
   margin-bottom: 27px;
@@ -184,7 +176,9 @@ h5 {
   text-decoration: none;
   transition: color 0.2s ease-in-out;
 }
-.phone, .mail, .adress {
+.phone,
+.mail,
+.adress {
   position: relative;
   padding-left: 28px;
 }
@@ -221,7 +215,9 @@ h5 {
   transition: color 0.2s ease-in-out;
   letter-spacing: 1.6px;
 }
-.contacts a:hover, .navigation a:hover, .lang-item:hover {
+.contacts a:hover,
+.navigation a:hover,
+.lang-item:hover {
   color: #65baaf;
 }
 
@@ -229,24 +225,24 @@ h5 {
   position: static;
   width: 160px;
   height: 160px;
-  background-color:#ffffff;
+  background-color: #ffffff;
   border-radius: 50%;
   z-index: 5;
 }
-
 
 .search {
   border-bottom: solid 1px #65baaf;
 }
 .submit {
-  cursor: pointer; 
+  cursor: pointer;
 }
-.search::placeholder { 
+.search::placeholder {
   color: #959595;
-  font-family: 'PF Din Text Comp Pro Thin';
+  font-family: "PF Din Text Comp Pro Thin";
   font-size: 18px;
 }
-.search:hover, .search:focus {
+.search:hover,
+.search:focus {
   outline: 0;
   outline-offset: 0;
 }
@@ -266,7 +262,7 @@ p {
   margin-bottom: 2px;
 }
 .navigation_md a {
-  font-family: 'PF Din Text Comp Pro Thin';
+  font-family: "PF Din Text Comp Pro Thin";
   padding: 0 5px;
   margin: 0 auto;
 }
@@ -284,7 +280,7 @@ p {
   top: 0;
   opacity: 0.4;
   background: #000000;
-} 
+}
 .section_1::before {
   content: "";
   position: absolute;
@@ -314,7 +310,7 @@ p {
   bottom: 0;
   color: #ffffff;
   z-index: 5;
-  font-family: 'PF Din Text Comp Pro Thin';
+  font-family: "PF Din Text Comp Pro Thin";
   padding-bottom: 47px;
 }
 .descr_line1 {
@@ -339,7 +335,7 @@ p {
 }
 /* section_2 */
 .section_2 {
-  font-family: 'PF Din Text Comp Pro Thin';
+  font-family: "PF Din Text Comp Pro Thin";
   position: relative;
 }
 .section_2::before {
@@ -347,8 +343,8 @@ p {
   content: "";
   bottom: -100px;
   z-index: 1;
-  left:50%;
-  transform:translate(-50%, -50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 88px;
   height: 88px;
   background: url(../images/section_2/2-layers.png) no-repeat;
@@ -387,10 +383,210 @@ p {
 /* section_3 */
 .section_3 .container {
   padding-top: 52px;
+  padding-bottom: 84px;
+  position: relative;
 }
+.section_3 .container::after {
+  position: absolute;
+  content: "";
+  width: 70px;
+  height: 70px;
+  bottom: -70px;
+  z-index: 1;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url(../images/section_3/cherry.png) no-repeat center;
+}
+.headling_sec_3 {
+  margin-bottom: 91px;
+}
+.book {
+  height: 427px;
+  width: 744px;
+  position: relative;
+  background: url(../images/section_3/book.png) no-repeat center;
+}
+.decoration_block {
+  position: relative;
+}
+.bookmark::before {
+  position: absolute;
+  content: "ТМ «Чарівна мозаїка»";
+  width: 181px;
+  height: 245px;
+  top: 0;
+  left: 32px;
+  z-index: -2;
+  font-weight: 500;
+  background: url(../images/section_3/bookmark1.png) no-repeat center;
+}
+.bookmark {
+  width: 147px;
+  height: 49px;
+  top: -34px;
+  left: 38px;
+  z-index: -2;
+  color: #ffffff;
+  font-family: "PF Din Text Comp Pro - Thin";
+  font-size: 18px;
+  background: url(../images/section_3/bookmark2.png) no-repeat center;
+}
+.bookmark::after {
+  position: absolute;
+  content: "ТМ «Private Label»";
+  width: 155px;
+  height: 42px;
+  top: 0;
+  right: 8rem;
+  z-index: -2;
+  background: url(../images/section_3/bookmark3.png) no-repeat center;
+}
+.book::before {
+  position: absolute;
+  content: "";
+  width: 39px;
+  height: 194px;
+  top: -68px;
+  left: 42%;
+  z-index: -1;
+  background: url(../images/section_3/decoration1.png) no-repeat center;
+}
+.book::after {
+  position: absolute;
+  content: "";
+  width: 66px;
+  height: 64px;
+  top: 6px;
+  right: 7%;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  background: url(../images/section_3/decoration2.png) no-repeat center;
+}
+
+.book_img {
+  padding-top: 51px;
+  margin-bottom: 33px;
+}
+.book_details {
+  opacity: 0.7;
+  color: #8f5926;
+  font-family: "PF Din Text Comp Pro";
+  font-size: 18px;
+  font-weight: 500;
+}
+.head_book {
+  position: relative;
+  color: #caa977;
+  font-family: "PF Din Text Comp Pro";
+  font-size: 36px;
+  font-weight: 500;
+  padding-top: 1rem;
+}
+.head_book::after {
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 8px;
+  bottom: -15px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url(../images/section_3/line.png) no-repeat center;
+}
+.text {
+  color: #7d7d7d;
+  font-family: "PF Din Text Comp Pro - Thin";
+  font-size: calc((100vw - 320px) / (1920 - 320) * (20 - 18) + 18px);
+  margin-top: 25px;
+}
+.text2 {
+  margin-bottom: 20px;
+}
+.next,
+.back {
+  font-family: "PF Din Text Comp Pro";
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+}
+.back {
+  color: #caa977;
+  padding-right: 52px;
+}
+.back::after {
+  position: absolute;
+  content: "";
+  width: 32px;
+  height: 31px;
+  bottom: -16px;
+  right: 0;
+  transform: translate(-50%, -50%);
+  background: url(../images/section_3/book_back.png) no-repeat center;
+}
+.next {
+  color: #65baaf;
+  padding-left: 32px;
+}
+.next::after {
+  position: absolute;
+  content: "";
+  width: 32px;
+  height: 31px;
+  bottom: -16px;
+  left: 10px;
+  transform: translate(-50%, -50%);
+  background: url(../images/section_3/book_next.png) no-repeat center;
+}
+.cup_cake {
+  transition: background-color 0.2s ease-in-out;
+  background-color: transparent;
+}
+.cup_cake:hover {
+  background-color: #b2dcd763;
+}
+.cupcake_img {
+  position: relative;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.cupcake_img::before {
+  position: absolute;
+  content: "";
+  bottom: 45px;
+  left: 0;
+  width: 17px;
+  height: 13px;
+  background: url(../images/section_3/back.png) no-repeat center;
+}
+.cupcake_img::after {
+  position: absolute;
+  content: "";
+  bottom: 45px;
+  right: 0;
+  width: 17px;
+  height: 13px;
+  background: url(../images/section_3/next.png) no-repeat center;
+}
+.shadow {
+  width: 139px;
+  height: 25px;
+  background: url(../images/section_3/shadow.png) no-repeat center;
+}
+.headling_cupcake {
+  color: #65baaf;
+  font-family: "PF Din Text Comp Pro";
+  font-size: 24px;
+  font-weight: 500;
+}
+.paragraph_cupcake {
+  color: #7d7d7d;
+  font-family: "PF Din Text Comp Pro - Thin";
+  font-size: 18px;
+}
+
 /* section_4 */
 .section_4 {
   position: relative;
+  padding-top: 3.8rem;
 }
 .section_4 .container {
   padding-bottom: 60px;
@@ -411,22 +607,22 @@ h2 {
   font-size: 40px;
   font-size: calc((100vw - 320px) / (1920 - 320) * (40 - 30) + 30px);
   font-weight: 700;
- }
- .h2_sect_4 {
-  padding-top: 5%;
+}
+.h2_sect_4 {
   margin-bottom: 3%;
   z-index: 2;
- }
- .card_product, .parent_img {
-  display:flex;
+}
+.card_product,
+.parent_img {
+  display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
   justify-content: center;
- }
- .card_product img {
-   display: block;
-   padding: 5%;
- }
+}
+.card_product img {
+  display: block;
+  padding: 5%;
+}
 .text_card {
   color: #915b27;
   font-family: "PF Din Text Comp Pro - Thin";
@@ -496,7 +692,6 @@ h2 {
 /* section_6 */
 .section_6 {
   padding: 3.6rem 0 3.9rem 0;
-
 }
 .cards {
   margin-bottom: 4.7rem;
@@ -569,10 +764,11 @@ h2 {
   background-color: #ffffff46;
   padding: 15px 12px 12px 12px;
   margin: 0.25rem 0;
-  outline:none;
+  outline: none;
   transition: all 0.2s ease-in-out;
 }
-.forms_input:hover, .forms_input:focus {
+.forms_input:hover,
+.forms_input:focus {
   background-color: #ffffff70;
 }
 input::placeholder {
@@ -642,13 +838,11 @@ footer a {
 }
 footer a:hover {
   color: #67bbaf;
-  outline:none;
+  outline: none;
   text-decoration: none;
-  
 }
 .footer_nav a {
   transition: all 0.2s ease-in-out;
-  
 }
 .footer_nav a:hover {
   padding-left: 5px;
@@ -676,9 +870,7 @@ h6 {
   color: #b1b1b1;
   font-family: "PF Din Text Comp Pro - Thin";
   font-size: 20px;
-  
 }
-
 
 .btn_mailing {
   color: #b1b1b1;
@@ -694,7 +886,7 @@ h6 {
 .btn_mailing:hover {
   color: #65baaf;
   border: solid 1px #65baaf;
-  padding-left: 12px; 
+  padding-left: 12px;
 }
 .copywrite {
   color: #7d7d7d;
@@ -717,8 +909,6 @@ h6 {
 .facebook {
   background: url(../images/footer/facebook.png) no-repeat center;
 }
-
-
 
 @media screen and (min-width: 992px) {
   .container_section_2::before {
