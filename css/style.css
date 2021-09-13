@@ -27,12 +27,17 @@
     }
 /* css reset */
 
+/* general */
 html {
     box-sizing: border-box;
     font-family: 'PF Din Text Comp Pro Thin';
-    
 }
-/* general */
+h5 {
+  color: #c8a674;
+  font-family: "PF Din Text Comp Pro";
+  font-size: 22px;
+  font-weight: 500;
+}
 .navbar {
     background-color: #65baaf;
     text-align: right;
@@ -179,7 +184,7 @@ html {
   text-decoration: none;
   transition: color 0.2s ease-in-out;
 }
-.phone, .mail {
+.phone, .mail, .adress {
   position: relative;
   padding-left: 28px;
 }
@@ -559,11 +564,16 @@ h2 {
   font-weight: 300;
   margin: 0.7rem 0;
 }
-input {
+.forms_input {
   border: 1px solid #ffffff;
   background-color: #ffffff46;
   padding: 15px 12px 12px 12px;
   margin: 0.25rem 0;
+  outline:none;
+  transition: all 0.2s ease-in-out;
+}
+.forms_input:hover, .forms_input:focus {
+  background-color: #ffffff70;
 }
 input::placeholder {
   color: #ffffff;
@@ -579,10 +589,134 @@ input::placeholder {
   font-size: 22px;
   font-weight: 500;
   background-color: transparent;
+  border: solid 1px #ffffff;
   border-radius: 16px;
   margin-top: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+.input_submit:hover {
+  background-color: #ffffff46;
+}
+.input_submit:focus {
+  background-color: #ffffff;
+  color: #67bbaf;
+}
+/* footer */
+footer {
+  padding-top: 41px;
+  padding-bottom: 20px;
+}
+.footer_line_1 {
+  margin-bottom: 2rem;
+}
+.adress::before {
+  content: "";
+  position: absolute;
+  top: -0;
+  left: 0;
+  width: 28px;
+  height: 28px;
+  background: url(../images/footer/adress.png) no-repeat;
+}
+.mailing {
+  position: relative;
+  margin-top: 10px;
+  height: 212px;
+}
+.mailing::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: url(../images/footer/frame.png) no-repeat center;
 }
 
+footer a {
+  color: #7d7d7d;
+  transition: all 0.2s ease-in-out;
+  font-family: "PF Din Text Comp Pro - Thin";
+  font-size: 20px;
+}
+footer a:hover {
+  color: #67bbaf;
+  outline:none;
+  text-decoration: none;
+  
+}
+.footer_nav a {
+  transition: all 0.2s ease-in-out;
+  
+}
+.footer_nav a:hover {
+  padding-left: 5px;
+}
+h6 {
+  color: #67bbaf;
+  font-family: "PF Din Text Comp Pro";
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 1rem auto;
+}
+.mailing_input {
+  display: block;
+  outline: none;
+  border: none;
+  margin: 2rem auto;
+  border-bottom: solid 1px transparent;
+  transition: all 0.2s ease-in-out;
+}
+.mailing_input:focus {
+  border-bottom: solid 1px #67bbaf;
+}
+.mailing_input::placeholder {
+  color: #b1b1b1;
+  font-family: "PF Din Text Comp Pro - Thin";
+  font-size: 20px;
+  
+}
+
+
+.btn_mailing {
+  color: #b1b1b1;
+  font-family: "PF Din Text Comp Pro";
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: solid 1px #b1b1b1;
+  border-radius: 16px;
+  margin: 0 auto;
+  transition: all 0.2s ease-in-out;
+}
+.btn_mailing:hover {
+  color: #65baaf;
+  border: solid 1px #65baaf;
+  padding-left: 12px; 
+}
+.copywrite {
+  color: #7d7d7d;
+  font-family: "PF Din Text Comp Pro - Thin";
+  font-size: 16px;
+}
+.social_menu a {
+  width: 49px;
+  height: 48px;
+  margin: 6px;
+  transition: all 0.4s ease-in-out;
+  transform: rotate(0deg);
+}
+.social_menu a:hover {
+  transform: rotate(360deg);
+}
+.vk {
+  background: url(../images/footer/vk.png) no-repeat center;
+}
+.facebook {
+  background: url(../images/footer/facebook.png) no-repeat center;
+}
 
 
 
