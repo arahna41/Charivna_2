@@ -151,24 +151,12 @@ h5 {
   justify-content: center;
   padding: 5px 0;
 }
-.nav_desktop {
-  justify-content: space-between;
-}
-.a_lang {
-  display: block;
-}
 
 /* desctop_header_style */
-.desctop_header {
-  justify-content: space-between;
-  padding-top: 13px;
-}
-.desctop_header a {
+a {
   font-family: "PF Din Text Comp Pro Thin";
 }
-.contacts {
-  margin-bottom: 27px;
-}
+
 
 .contacts a {
   font-size: 18px;
@@ -185,7 +173,6 @@ h5 {
 .phone {
   padding-top: 4px;
 }
-
 .phone::after {
   content: "";
   position: absolute;
@@ -208,28 +195,45 @@ h5 {
   background: url(../images/header/email.png) no-repeat;
 }
 .navigation a {
-  font-size: 16px;
+  font-size: calc((100vw - 768px) / (1920 - 768) * (16 - 14) + 14px);
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
   transition: color 0.2s ease-in-out;
   letter-spacing: 1.6px;
+  padding: 7px;
 }
 .contacts a:hover,
 .navigation a:hover,
 .lang-item:hover {
   color: #65baaf;
 }
-
-.middle_col_header {
+.test_logo {
   position: static;
-  width: 160px;
-  height: 160px;
+}
+.test_logo::after {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  top: 5rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
   background-color: #ffffff;
   border-radius: 50%;
-  z-index: 5;
 }
-
+.test_logo::before {
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  top: 5rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  background: url(../images/logo.png) no-repeat center;
+}
 .search {
   border-bottom: solid 1px #65baaf;
 }
@@ -255,21 +259,12 @@ h5 {
   padding: 0 9px;
   transition: color 0.2s ease-in-out;
 }
-.search_parent {
-  margin-bottom: 50px;
-}
 p {
   margin-bottom: 2px;
-}
-.navigation_md a {
-  font-family: "PF Din Text Comp Pro Thin";
-  padding: 0 5px;
-  margin: 0 auto;
 }
 /* section_1 */
 .section_1 {
   position: relative;
-  margin-top: -34px;
 }
 .section_1::after {
   content: "";
@@ -314,14 +309,12 @@ p {
   padding-bottom: 47px;
 }
 .descr_line1 {
-  font-size: 20px;
   font-size: calc((100vw - 768px) / (1920 - 768) * (20 - 14) + 14px);
   line-height: 40px;
   letter-spacing: 0.43px;
   padding: 4% 0;
 }
 .descr_header {
-  font-size: 72px;
   font-size: calc((100vw - 768px) / (1920 - 768) * (72 - 14) + 14px);
   font-weight: 600;
   letter-spacing: 1.22px;
