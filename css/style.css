@@ -20,7 +20,6 @@
 
   font-style: normal;
 }
-/* css reset */
 
 /* general */
 html {
@@ -32,15 +31,6 @@ h5 {
   font-family: "PF Din Text Comp Pro";
   font-size: 22px;
   font-weight: 500;
-}
-.navbar {
-  background-color: #65baaf;
-  text-align: right;
-  align-items: flex-start;
-}
-.contacts,
-.menu {
-  justify-content: space-between;
 }
 .tel {
   position: relative;
@@ -59,10 +49,15 @@ h5 {
   border: none;
 }
 .dropdown-item {
+  background-color: #b2dcd763;
+  color: #65baaf;
+  transition: all 0.2s ease-in-out;
+}
+.dropdown-item:hover, .dropdown-item:focus {
+  background-color: #ffffff;
   color: #65baaf;
 }
 .email {
-  display: block;
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -119,7 +114,7 @@ h5 {
   height: 56px;
   top: -25px;
   left: -1px;
-  background-color: #ffffff;
+  background-color: #65baaf;
   transform: skewY(26deg);
   border: none;
 }
@@ -130,7 +125,7 @@ h5 {
   height: 56px;
   top: -25px;
   left: -5px;
-  background-color: #ffffff;
+  background-color: #65baaf;
   transform: skewY(-26deg);
   border: none;
 }
@@ -143,26 +138,30 @@ h5 {
   top: -9px;
   left: -10px;
   z-index: 5;
-  color: #65baaf;
+  color: #ffffff;
   font-size: 12px;
   text-transform: uppercase;
 }
 .logo {
-  justify-content: center;
   padding: 5px 0;
 }
-
+.navbar-light .navbar-nav .nav-link {
+  color: #65baaf;
+}
 /* desctop_header_style */
 a {
   font-family: "PF Din Text Comp Pro Thin";
 }
-
-
 .contacts a {
   font-size: 18px;
   color: #959595;
   text-decoration: none;
   transition: color 0.2s ease-in-out;
+}
+.contacts a:hover,
+.navigation a:hover,
+.lang-item:hover {
+  color: #65baaf;
 }
 .phone,
 .mail,
@@ -195,23 +194,18 @@ a {
   background: url(../images/header/email.png) no-repeat;
 }
 .navigation a {
-  font-size: calc((100vw - 768px) / (1920 - 768) * (16 - 14) + 14px);
+  font-size: 1rem;
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
   transition: color 0.2s ease-in-out;
   letter-spacing: 1.6px;
-  padding: 7px;
+  padding: 7px 0;
 }
-.contacts a:hover,
-.navigation a:hover,
-.lang-item:hover {
-  color: #65baaf;
-}
-.test_logo {
+.logo_desktop {
   position: static;
 }
-.test_logo::after {
+.logo_desktop::after {
   content: "";
   position: absolute;
   width: 180px;
@@ -223,7 +217,7 @@ a {
   background-color: #ffffff;
   border-radius: 50%;
 }
-.test_logo::before {
+.logo_desktop::before {
   content: "";
   position: absolute;
   width: 140px;
@@ -312,13 +306,11 @@ p {
   font-size: calc((100vw - 768px) / (1920 - 768) * (20 - 14) + 14px);
   line-height: 40px;
   letter-spacing: 0.43px;
-  padding: 4% 0;
 }
 .descr_header {
   font-size: calc((100vw - 768px) / (1920 - 768) * (72 - 14) + 14px);
   font-weight: 600;
   letter-spacing: 1.22px;
-  padding: 3% 0;
 }
 .descr_line2 {
   font-family: Flow;
