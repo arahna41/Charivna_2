@@ -152,7 +152,7 @@ h5 {
   color: #65baaf;
 }
 /* desctop_header_style */
-a {
+a, p {
   font-family: "PF Din Text Comp Pro Thin";
 }
 .contacts a {
@@ -479,7 +479,6 @@ p {
 }
 .text {
   color: #7d7d7d;
-  font-family: "PF Din Text Comp Pro - Thin";
   font-size: calc((100vw - 320px) / (1920 - 320) * (20 - 18) + 18px);
   margin-top: 25px;
 }
@@ -610,7 +609,6 @@ h2 {
 }
 .text_card {
   color: #915b27;
-  font-family: "PF Din Text Comp Pro - Thin";
   font-size: 20px;
   line-height: 22px;
   text-align: center;
@@ -640,7 +638,6 @@ h2 {
 }
 .paragr_adv {
   color: #7d7d7d;
-  font-family: "PF Din Text Comp Pro - Thin";
   font-size: calc((100vw - 320px) / (1920 - 320) * (24 - 18) + 18px);
   margin-bottom: 47px;
 }
@@ -706,12 +703,10 @@ h2 {
 }
 .card-text {
   color: #7d7d7d;
-  font-family: "PF Din Text Comp Pro - Thin";
   font-size: 18px;
 }
 .btn_news {
   color: #b1b1b1;
-  font-family: "PF Din Text Comp Pro";
   font-size: 16px;
   font-weight: 500;
   text-transform: uppercase;
@@ -739,7 +734,7 @@ h2 {
 }
 .headling_card_map {
   color: #ffffff;
-  font-family: "PF Din Text Comp Pro";
+  font-family: "PF Din Text Comp Pro Thin";
   font-size: 42px;
   font-weight: 300;
   margin: 0.7rem 0;
@@ -758,7 +753,7 @@ h2 {
 }
 input::placeholder {
   color: #ffffff;
-  font-family: "PF Din Text Comp Pro - Thin";
+  font-family: "PF Din Text Comp Pro Thin";
   font-size: 22px;
 }
 .message {
@@ -766,7 +761,7 @@ input::placeholder {
 }
 .input_submit {
   color: #ffffff;
-  font-family: "PF Din Text Comp Pro";
+  font-family: "PF Din Text Comp Pro Thin";
   font-size: 22px;
   font-weight: 500;
   background-color: transparent;
@@ -818,7 +813,6 @@ footer {
 footer a {
   color: #7d7d7d;
   transition: all 0.2s ease-in-out;
-  font-family: "PF Din Text Comp Pro - Thin";
   font-size: 20px;
 }
 footer a:hover {
@@ -853,13 +847,11 @@ h6 {
 }
 .mailing_input::placeholder {
   color: #b1b1b1;
-  font-family: "PF Din Text Comp Pro - Thin";
+  font-family: "PF Din Text Comp Pro";
   font-size: 20px;
 }
-
 .btn_mailing {
   color: #b1b1b1;
-  font-family: "PF Din Text Comp Pro";
   font-size: 16px;
   font-weight: 500;
   text-transform: uppercase;
@@ -875,7 +867,6 @@ h6 {
 }
 .copywrite {
   color: #7d7d7d;
-  font-family: "PF Din Text Comp Pro - Thin";
   font-size: 16px;
 }
 .social_menu a {
@@ -894,6 +885,17 @@ h6 {
 .facebook {
   background: url(../images/footer/facebook.png) no-repeat center;
 }
+
+.container, .container-fluid, .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.row {
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+
 
 @media screen and (min-width: 992px) {
   .container_section_2::before {
@@ -924,5 +926,10 @@ h6 {
     height: 637px;
     z-index: -1;
     background: url(../images/section_5/cottage_cheese+dough.png) no-repeat;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1000px;
   }
 }
