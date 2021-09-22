@@ -22,6 +22,14 @@
 }
 
 /* general */
+.container, .container-fluid, .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.row {
+  margin-right: -10px;
+  margin-left: -10px;
+}
 html {
   box-sizing: border-box;
   font-family: "PF Din Text Comp Pro Thin";
@@ -167,16 +175,19 @@ a, p {
   color: #65baaf;
 }
 .phone,
-.mail,
 .adress {
   position: relative;
-  padding-left: 21px;
+  padding-left: 59px;
+}
+.mail {
+  position: relative;
+  padding-left: 60px;
 }
 .phone::after {
   content: "";
   position: absolute;
   top: -5px;
-  left: -8px;
+  left: 31px;
   width: 28px;
   height: 28px;
   background: url(../images/header/tel.png) no-repeat;
@@ -188,10 +199,14 @@ a, p {
   content: "";
   position: absolute;
   top: 8px;
-  left: -17px;
+  left: 22px;
   width: 28px;
   height: 28px;
   background: url(../images/header/email.png) no-repeat;
+}
+.navigation {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .navigation a {
   font-size: 1rem;
@@ -200,7 +215,7 @@ a, p {
   text-decoration: none;
   transition: color 0.2s ease-in-out;
   letter-spacing: 1.6px;
-  padding: 7px 0;
+  padding: 3px 11px 13px 11px;
 }
 .logo_desktop {
   position: static;
@@ -208,9 +223,9 @@ a, p {
 .logo_desktop::after {
   content: "";
   position: absolute;
-  width: 180px;
-  height: 180px;
-  top: 5rem;
+  width: 192px;
+  height: 192px;
+  top: 5.3rem;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
@@ -222,7 +237,7 @@ a, p {
   position: absolute;
   width: 140px;
   height: 140px;
-  top: 5rem;
+  top: 5.3rem;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
@@ -260,6 +275,9 @@ p {
 .section_1 {
   position: relative;
 }
+.section_1 .container-fluid {
+  height: 593px;
+}
 .section_1::after {
   content: "";
   position: absolute;
@@ -273,7 +291,7 @@ p {
 .section_1::before {
   content: "";
   position: absolute;
-  left: -13px;
+  left: -15px;
   top: 70px;
   width: 94px;
   height: 56px;
@@ -281,6 +299,12 @@ p {
   background: url(../images/section_1/made_in_Ukraine.png) no-repeat;
 }
 /* carousel*/
+.carousel, .carousel-inner, .row-carousel, .carousel-item {
+  height: 100%;
+}
+.carousel-indicators {
+  bottom: 19px;
+}
 .carousel-indicators li {
   background: url(../images/section_1/dots.png) no-repeat center;
   width: 37px;
@@ -886,14 +910,7 @@ h6 {
   background: url(../images/footer/facebook.png) no-repeat center;
 }
 
-.container, .container-fluid, .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
-  padding-right: 10px;
-  padding-left: 10px;
-}
-.row {
-  margin-right: -10px;
-  margin-left: -10px;
-}
+
 
 
 
@@ -931,5 +948,9 @@ h6 {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1000px;
+  }
+  .navigation {
+    padding-left: 29px;
+    padding-right: 28px;
   }
 }
