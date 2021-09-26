@@ -231,6 +231,9 @@ h5 {
 .navbar-light .navbar-nav .nav-link {
   color: #65baaf;
 }
+.btn.focus, .btn:focus {
+  box-shadow: 0 0 9px 0.1rem #65baaf;
+}
 /* desctop_header_style */
 a,
 p {
