@@ -56,8 +56,6 @@ h6 {
 	font-family: "PF Din Text Comp Pro";
 	font-size: 20px;
 	font-weight: 500;
-	text-transform: uppercase;
-	margin: 1rem auto;
 }
 a, p {
 	font-family: "PF Din Text Comp Pro Thin";
@@ -395,9 +393,6 @@ p {
 	width: 37px;
 	height: 37px;
 }
-.carousel-item img {
-	height: auto;
-}
 .description {
 	position: absolute;
 	top: 0;
@@ -467,9 +462,6 @@ p {
 	background-size: contain;
 	z-index: 2;
 }
-.name_company img {
-  	margin: 0 auto;
-}
 /* section_3 */
 .section_3 .container {
 	padding-top: 48px;
@@ -497,40 +489,50 @@ p {
 	height: 427px;
 	width: 744px;
 	position: relative;
+	left: -46px;
+    top: -1px;
 	background: url(../images/section_3/book.png) no-repeat center;
+}
+.book_img img {
+	position: relative;
+    top: -37px;
+    left: 10px;
 }
 .decoration_block {
   	position: relative;
 }
-.bookmark::before {
-	position: absolute;
-	content: "ТМ «Чарівна мозаїка»";
-	width: 181px;
-	height: 245px;
-	top: 0;
-	left: 32px;
-	z-index: -2;
-	font-weight: 500;
-	background: url(../images/section_3/bookmark1.png) no-repeat center;
-}
 .bookmark {
 	width: 147px;
 	height: 49px;
-	top: -34px;
-	left: 38px;
+    padding: 11px 0px 0 7px;
+	top: -37px;
+    left: 13px;
 	z-index: -2;
 	color: #ffffff;
 	font-family: "PF Din Text Comp Pro Thin";
 	font-size: 18px;
 	background: url(../images/section_3/bookmark2.png) no-repeat center;
 }
+.bookmark::before {
+	position: absolute;
+	content: "ТМ «ЧАРІВНА МОЗАЇКА»";
+    padding: 14px 0px 0 22px;
+	width: 181px;
+	height: 245px;
+	top: -8px;
+    left: 114px;
+	z-index: -2;
+	font-weight: 500;
+	background: url(../images/section_3/bookmark1.png) no-repeat center;
+}
 .bookmark::after {
 	position: absolute;
 	content: "ТМ «Private Label»";
 	width: 155px;
 	height: 42px;
-	top: 0;
-	right: 8rem;
+	padding: 12px 0px 0 28px;
+	top: -1px;
+    right: 149px;
 	z-index: -2;
 	background: url(../images/section_3/bookmark3.png) no-repeat center;
 }
@@ -539,8 +541,8 @@ p {
 	content: "";
 	width: 39px;
 	height: 194px;
-	top: -68px;
-	left: 42%;
+	top: -69px;
+    left: 40.5%;
 	z-index: -1;
 	background: url(../images/section_3/decoration1.png) no-repeat center;
 }
@@ -549,8 +551,8 @@ p {
 	content: "";
 	width: 66px;
 	height: 64px;
-	top: 6px;
-	right: 7%;
+	top: 7px;
+    right: 50px;
 	z-index: -1;
 	transform: translate(-50%, -50%);
 	background: url(../images/section_3/decoration2.png) no-repeat center;
@@ -565,6 +567,9 @@ p {
 	font-family: "PF Din Text Comp Pro Thin";
 	font-size: 18px;
 	font-weight: 500;
+	position: relative;
+    top: -42px;
+    left: 7px;
 }
 .head_book {
 	position: relative;
@@ -572,25 +577,23 @@ p {
 	font-family: "PF Din Text Comp Pro Thin";
 	font-size: 36px;
 	font-weight: 500;
-	padding-top: 1rem;
 }
 .head_book::after {
 	position: absolute;
 	content: "";
 	width: 45px;
 	height: 8px;
-	bottom: -15px;
-	left: 50%;
+	bottom: -38px;
+    left: 50%;
 	transform: translate(-50%, -50%);
 	background: url(../images/section_3/line.png) no-repeat center;
 }
 .text {
 	color: #7d7d7d;
 	font-size: calc((100vw - 320px) / (1920 - 320) * (20 - 18) + 18px);
-	margin-top: 25px;
 }
 .text2 {
-  	margin-bottom: 20px;
+	line-height: 27px;
 }
 .next,
 .back {
@@ -601,7 +604,7 @@ p {
 }
 .back {
 	color: #caa977;
-	padding-right: 52px;
+	padding-right: 43px;
 }
 .back::after {
 	position: absolute;
@@ -609,13 +612,13 @@ p {
 	width: 32px;
 	height: 31px;
 	bottom: -16px;
-	right: 0;
+    right: -17px;
 	transform: translate(-50%, -50%);
 	background: url(../images/section_3/book_back.png) no-repeat center;
 }
 .next {
 	color: #65baaf;
-	padding-left: 32px;
+	padding-left: 58px;
 }
 .next::after {
 	position: absolute;
@@ -623,7 +626,7 @@ p {
 	width: 32px;
 	height: 31px;
 	bottom: -16px;
-	left: 10px;
+    left: 32px;
 	transform: translate(-50%, -50%);
 	background: url(../images/section_3/book_next.png) no-repeat center;
 }
@@ -642,8 +645,8 @@ p {
 .cupcake_img::before {
 	position: absolute;
 	content: "";
-	bottom: 45px;
-	left: 0;
+	bottom: 43px;
+    left: -21px;
 	width: 17px;
 	height: 13px;
 	background: url(../images/section_3/back.png) no-repeat center;
@@ -651,8 +654,8 @@ p {
 .cupcake_img::after {
 	position: absolute;
 	content: "";
-	bottom: 45px;
-	right: 0;
+	bottom: 43px;
+    right: -21px;
 	width: 17px;
 	height: 13px;
 	background: url(../images/section_3/next.png) no-repeat center;
@@ -672,6 +675,7 @@ p {
 	color: #7d7d7d;
 	font-family: "PF Din Text Comp Pro Thin";
 	font-size: 18px;
+	margin-top: -10px;
 }
 /* section_4 */
 .section_4 {
@@ -1099,6 +1103,13 @@ footer a:hover {
 	}
 	.footer_contacts_parent {
 		padding-left: 65px !important;
+	}
+	.cupcake_img {
+		position: relative;
+		margin-top: -10px;
+		margin-left: -33px;
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
 @media screen and (min-width: 1920px) {
