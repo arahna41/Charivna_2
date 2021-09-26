@@ -1074,7 +1074,6 @@ h6 {
 .btn_mailing:hover {
   color: #65baaf;
   border: solid 1px #65baaf;
-  padding-left: 12px;
 }
 .footer_line_2 {
   padding-top: 14px;
@@ -1090,7 +1089,6 @@ h6 {
 .social_menu {
   margin-right: 8px;
 }
-
 .social_menu a {
   width: 49px;
   height: 48px;
