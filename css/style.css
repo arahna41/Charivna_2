@@ -47,7 +47,6 @@ h5 {
 h2 {
 	color: #65baaf;
 	font-family: Flow;
-	font-size: 40px;
 	font-size: calc((100vw - 320px) / (1920 - 320) * (40 - 30) + 30px);
 	font-weight: 700;
 }
@@ -302,7 +301,7 @@ p {
 	color: #959595;
 	font-family: "PF Din Text Comp Pro Thin";
 	font-size: 18px;
-	padding: 0 0 0 0;
+	padding: 0;
 }
 .search:hover,
 .search:focus {
