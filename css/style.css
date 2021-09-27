@@ -738,6 +738,7 @@ p {
   	margin-bottom: 19px;
 }
 .paragr_adv {
+	background-color: #ffffffb4;
 	color: #7d7d7d;
 	font-size: calc((100vw - 320px) / (1920 - 320) * (24 - 18) + 18px);
 	margin-bottom: 47px;
@@ -1111,8 +1112,13 @@ footer a:hover {
 		padding-right: 0;
 	}
 }
+@media screen and (min-width: 1600px) {
+	.paragr_adv {
+		background-color: transparent;
+	}
+}
 @media screen and (min-width: 1920px) {
 	.carousel-item {
 		height: 593px;
-  	}
+  	} 
 }
