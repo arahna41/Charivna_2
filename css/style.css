@@ -13,6 +13,10 @@
 	font-style: normal;
 }
 /* general */
+html {
+	box-sizing: border-box;
+	font-family: "PF Din Text Comp Pro Thin";
+}
 .container, .container-fluid, .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7,
 .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4,
 .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11,
@@ -27,19 +31,13 @@
 	margin-right: -10px;
 	margin-left: -10px;
 }
-html {
-	box-sizing: border-box;
-	font-family: "PF Din Text Comp Pro Thin";
-}
-h5 {
-	color: #caa977;
-	font-family: "PF Din Text Comp Pro Thin";
-	font-size: 22px;
-	font-weight: 500;
-}
 .btn.focus,
 .btn:focus {
 	box-shadow: 0 0 9px 0px #65baaf;
+}
+button:focus {
+    outline: none;
+    outline: none;
 }
 h2 {
 	color: #65baaf;
@@ -48,6 +46,12 @@ h2 {
 	font-weight: 700;
 	position: relative;
 	z-index: 1;
+}
+h5 {
+	color: #caa977;
+	font-family: "PF Din Text Comp Pro Thin";
+	font-size: 22px;
+	font-weight: 500;
 }
 h6 {
 	color: #67bbaf;
@@ -61,28 +65,23 @@ a, p {
 p {
 	margin-bottom: 1px;
 }
-button:focus {
-    outline: none;
-    outline: none;
+ul {
+	list-style-type: none;
+	margin-block-end: 0;
 }
 /* header */
 .navbar {
 	background-color: #b2dcd790;
 }
-.navbar-light .navbar-nav .nav-link {
-	color: #65baaf;
-	background-color: #ffffffa2;
-}
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-    background-color: #b2dcd790;
-}
 .contacts_container {
 	z-index: 1;
     background-color: #ffffff;
 }
-.nav-link {
-	padding: .8rem 1rem;
-	font-size: calc((100vw - 768px) / (1920 - 320) * (16 - 14) + 14px);
+.contacts_row a {
+	font-size: calc((100vw - 768px) / (1920 - 768) * (18 - 15) + 15px);
+	color: #959595;
+	text-decoration: none;
+	transition: color 0.2s ease-in-out;
 }
 .dropdown_menu_search {
     left: -105px;
@@ -114,40 +113,18 @@ button:focus {
     padding-left: 0;
     padding-right: 0;
 }
-.navbar-toggler:focus, .navbar-toggler:hover {
-    box-shadow: 0 0 9px 0px #65baaf;
-}
-.tel {
+.mail {
 	position: relative;
-	width: 35px;
-	height: 35px;
-	border-radius: 50%;
+	padding-bottom: 6px;
+    padding-top: 5px;
+    border-bottom: solid 1px #65baaf;
+    margin-bottom: 0px;
+	background-color: #c7e7e3;
+    border-right: solid 2px #65baaf;
+	z-index: 1;
 }
-.tel::after {
-	content: "";
-	background: url(../images/header/tel.png) no-repeat;
-	width: 28px;
-	height: 28px;
-	top: 2px;
-	left: 8px;
-	position: absolute;
-	border: none;
-}
-.email {
-	width: 35px;
-	height: 35px;
-	border-radius: 50%;
-	background-color: #ffffff;
-	position: relative;
-}
-.email::after {
-	content: "";
-	background: url(../images/header/email.png) no-repeat;
-	width: 28px;
-	height: 28px;
-	top: 11px;
-	left: 3px;
-	position: absolute;
+.mail a {
+	letter-spacing: 0.36px;
 }
 .search {
 	border: none;
@@ -155,36 +132,46 @@ button:focus {
 	border-bottom: solid 1px #65baaf;
 }
 .search::placeholder {
-	padding: 0 0 5px 8px;
+	color: #959595;
+	font-family: "PF Din Text Comp Pro Thin";
+	font-size: 18px;
+	padding: 0;
+}
+.search:hover,
+.search:focus {
+	outline: 0;
+	outline-offset: 0;
 }
 .submit {
-	width: 35px;
-	height: 35px;
+	position: relative;
+	background-color: #65baaf;
+	width: 33px;
+	height: 33px;
 	border: none;
 	border-radius: 50%;
-	background-color: #ffffff;
-	position: relative;
 	cursor: pointer;
+	top: 3px;
+    left: 5px;
 }
 .submit::before {
+	position: absolute;
 	content: "";
-	background-color: #65baaf;
+	top: 21px;
+	left: 18px;
 	width: 9px;
 	height: 2px;
-	top: 24px;
-	left: 19px;
+	background-color: #ffffff;
 	transform: rotate(45deg);
-	position: absolute;
 }
 .submit::after {
-	content: "";
-	border-radius: 50%;
-	border: solid 2px #65baaf;
-	width: 18px;
-	height: 18px;
-	top: 7px;
-	left: 7px;
 	position: absolute;
+	content: "";
+	top: 8px;
+	left: 8px;
+	width: 14px;
+	height: 14px;
+	border: solid 2px #ffffff;
+	border-radius: 50%;
 }
 .lang_container {
 	margin-right: 10px;
@@ -236,91 +223,6 @@ button:focus {
 .language {
 	padding-top: 11px;
 }
-.logo {
-	padding: 5px 0;
-}
-/* desctop_header_style */
-.left_col_header {
-	padding-top: 10px;
-}
-.contacts_row a {
-	font-size: calc((100vw - 768px) / (1920 - 768) * (18 - 15) + 15px);
-	color: #959595;
-	text-decoration: none;
-	transition: color 0.2s ease-in-out;
-}
-.tel_dropdown_btn:hover,
-.contacts a:hover,
-.navigation a:hover,
-.lang-item:hover {
-	color: #65baaf;
-}
-.mail {
-	position: relative;
-	padding-bottom: 6px;
-    padding-top: 5px;
-    border-bottom: solid 1px #65baaf;
-    margin-bottom: 0px;
-	background-color: #c7e7e3;
-    border-right: solid 2px #65baaf;
-	z-index: 1;
-}
-.mail a {
-	letter-spacing: 0.36px;
-}
-.navigation {
-	padding-left: 20px;
-	padding-right: 20px;
-}
-.navigation a {
-	font-size: 1rem;
-	text-transform: uppercase;
-	color: #000000;
-	text-decoration: none;
-	transition: color 0.2s ease-in-out;
-	letter-spacing: 1.6px;
-	padding: 3px 11px 13px 11px;
-}
-
-.submit_desktop {
-	background-color: #65baaf;
-	border-radius: 50%;
-	width: 33px;
-	height: 33px;
-	position: relative;
-	top: 3px;
-    left: 5px;
-}
-.submit_desktop::before {
-	position: absolute;
-	content: "";
-	top: 21px;
-	left: 18px;
-	width: 9px;
-	height: 2px;
-	background-color: #ffffff;
-	transform: rotate(45deg);
-}
-.submit_desktop::after {
-	position: absolute;
-	content: "";
-	top: 8px;
-	left: 8px;
-	width: 14px;
-	height: 14px;
-	border: solid 2px #ffffff;
-}
-.search::placeholder {
-	color: #959595;
-	font-family: "PF Din Text Comp Pro Thin";
-	font-size: 18px;
-	padding: 0;
-}
-.search:hover,
-.search:focus {
-	outline: 0;
-	outline-offset: 0;
-}
 .lang-item {
 	font-size: 14px;
 	font-weight: 500;
@@ -360,6 +262,28 @@ button:focus {
 	transform: skewY(-24deg);
 	border: none;
 	z-index: -1;
+}
+.tel_dropdown_btn:hover,
+.contacts a:hover,
+.lang-item:hover {
+	color: #65baaf;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #65baaf;
+	background-color: #ffffffa2;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    background-color: #b2dcd790;
+}
+.nav-link {
+	padding: .8rem 1rem;
+	font-size: calc((100vw - 768px) / (1920 - 320) * (16 - 14) + 14px);
+}
+.navbar-toggler:focus, .navbar-toggler:hover {
+    box-shadow: 0 0 9px 0px #65baaf;
+}
+.logo {
+	padding: 5px 0;
 }
 /* section_1 */
 .section_1 {
@@ -908,7 +832,7 @@ footer a:hover {
 }
 .footer_nav_2 {
 	margin-left: -7px;
- }
+}
 .footer_nav a {
 	transition: all 0.2s ease-in-out;
 }
