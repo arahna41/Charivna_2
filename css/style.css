@@ -33,13 +33,13 @@ html {
 }
 h5 {
 	color: #caa977;
-	font-family: "PF Din Text Comp Pro";
+	font-family: "PF Din Text Comp Pro Thin";
 	font-size: 22px;
 	font-weight: 500;
 }
 .btn.focus,
 .btn:focus {
-	box-shadow: 0 0 9px 0.1rem #65baaf;
+	box-shadow: 0 0 9px 0px #65baaf;
 }
 h2 {
 	color: #65baaf;
@@ -51,7 +51,7 @@ h2 {
 }
 h6 {
 	color: #67bbaf;
-	font-family: "PF Din Text Comp Pro";
+	font-family: "PF Din Text Comp Pro Thin";
 	font-size: 20px;
 	font-weight: 500;
 }
@@ -69,18 +69,52 @@ button:focus {
 header {
 	padding-top: 7px;
 }
+.navbar {
+	background-color: #b2dcd790;
+}
 .navbar-light .navbar-nav .nav-link {
 	color: #65baaf;
+	background-color: #ffffffa2;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    background-color: #b2dcd790;
+}
+.contacts_container {
+	z-index: 1;
+    background-color: #ffffff;
+}
+.dropdown_menu_search {
+    left: -105px;
 }
 .dropdown-item {
-	background-color: #b2dcd763;
+	background-color: #ffffff;
 	color: #65baaf;
 	transition: all 0.2s ease-in-out;
 }
 .dropdown-item:hover,
 .dropdown-item:focus {
-	background-color: #ffffff;
+	background-color: #b2dcd763;
 	color: #65baaf;
+}
+.tel_dropdown {
+	border-bottom: solid 1px #65baaf;
+	padding-right: 0;
+    padding-left: 0;
+    background-color: #b2dcd760;
+    border-right: solid 2px #65baaf;
+}
+.tel_dropdown_btn {
+	font-family: "PF Din Text Comp Pro Thin";
+	font-size: calc((100vw - 768px) / (1920 - 768) * (18 - 15) + 15px);
+	color: #959595;
+	text-decoration: none;
+	transition: color 0.2s ease-in-out;
+	width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+.navbar-toggler:focus, .navbar-toggler:hover {
+    box-shadow: 0 0 9px 0px #65baaf;
 }
 .tel {
 	position: relative;
@@ -152,6 +186,9 @@ header {
 	left: 7px;
 	position: absolute;
 }
+.lang_container {
+	margin-right: 10px;
+}
 .lang {
 	position: relative;
 }
@@ -160,7 +197,7 @@ header {
 	content: "";
 	width: 36px;
 	height: 56px;
-	top: -25px;
+	top: -17px;
 	left: -1px;
 	background-color: #65baaf;
 	transform: skewY(26deg);
@@ -171,7 +208,7 @@ header {
 	content: "";
 	width: 36px;
 	height: 56px;
-	top: -25px;
+	top: -17px;
 	left: -5px;
 	background-color: #65baaf;
 	transform: skewY(-26deg);
@@ -181,14 +218,20 @@ header {
 	position: relative;
 }
 .span_lang::after {
-	content: "lang";
-	position: absolute;
+	content: "ru";
+    position: absolute;
+    padding-left: 8px;
 	top: -9px;
 	left: -10px;
 	z-index: 5;
 	color: #ffffff;
 	font-size: 12px;
 	text-transform: uppercase;
+}
+.dropdown_menu_lang {
+	min-width: 4rem;
+    text-transform: uppercase;
+    left: -25px;
 }
 .logo {
 	padding: 5px 0;
@@ -197,43 +240,26 @@ header {
 .left_col_header {
 	padding-top: 10px;
 }
-.contacts a {
-	font-size: 18px;
+.contacts_row a {
+	font-size: calc((100vw - 768px) / (1920 - 768) * (18 - 15) + 15px);
 	color: #959595;
 	text-decoration: none;
 	transition: color 0.2s ease-in-out;
 }
+.tel_dropdown_btn:hover,
 .contacts a:hover,
 .navigation a:hover,
 .lang-item:hover {
 	color: #65baaf;
 }
-.phone {
-	position: relative;
-	padding-left: 59px;
-	top: 1px;
-}
-.phone::after {
-	content: "";
-	position: absolute;
-	top: -5px;
-	left: 31px;
-	width: 28px;
-	height: 28px;
-	background: url(../images/header/tel.png) no-repeat;
-}
 .mail {
 	position: relative;
-	padding-left: 60px;
-}
-.mail::after {
-	content: "";
-	position: absolute;
-	top: 8px;
-	left: 22px;
-	width: 28px;
-	height: 28px;
-	background: url(../images/header/email.png) no-repeat;
+	padding-bottom: 6px;
+    padding-top: 5px;
+    border-bottom: solid 1px #65baaf;
+    margin-bottom: 0px;
+	background-color: #b2dcd760;
+    border-right: solid 2px #65baaf;
 }
 .mail a {
 	letter-spacing: 0.36px;
@@ -259,7 +285,7 @@ header {
 	position: absolute;
 	width: 140px;
 	height: 140px;
-	top: 5.3rem;
+	top: 78px;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	z-index: 2;
@@ -270,7 +296,7 @@ header {
 	position: absolute;
 	width: 192px;
 	height: 192px;
-	top: 5.3rem;
+	top: 78px;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	z-index: 1;
@@ -388,12 +414,13 @@ header {
   	height: 100%;
 }
 .carousel-indicators {
-  	bottom: 19px;
+  	bottom: 9px;
 }
 .carousel-indicators li {
 	background: url(../images/section_1/dots.png) no-repeat center;
 	width: 37px;
 	height: 37px;
+	opacity: 1;
 }
 .carousel-indicators li.active {
 	background: url(../images/section_1/dots.active.png) no-repeat center;
@@ -412,19 +439,19 @@ header {
 	padding-bottom: 47px;
 }
 .descr_line1 {
-	font-size: calc((100vw - 768px) / (1920 - 768) * (20 - 14) + 14px);
+	font-size: calc((100vw - 768px) / (1920 - 768) * (20 - 16) + 16px);
 	line-height: 40px;
 	letter-spacing: 1.59px;
 }
 .descr_header {
-	font-size: calc((100vw - 768px) / (1920 - 768) * (72 - 14) + 14px);
+	font-size: calc((100vw - 768px) / (1920 - 768) * (72 - 16) + 16px);
 	font-weight: 600;
 	letter-spacing: 11.1px;
 }
 .descr_line2 {
 	font-family: Flow;
 	font-size: 32px;
-	font-size: calc((100vw - 768px) / (1920 - 768) * (32 - 14) + 14px);
+	font-size: calc((100vw - 768px) / (1920 - 768) * (32 - 16) + 16px);
 	line-height: 35.96px;
 	padding-top: 20px;
 }
@@ -664,7 +691,7 @@ header {
 	height: 13px;
 	background: url(../images/section_3/next.png) no-repeat center;
 }
-.shadow {
+.cake_shadow {
 	width: 139px;
 	height: 25px;
 	background: url(../images/section_3/shadow.png) no-repeat center;
@@ -932,7 +959,7 @@ footer a:hover {
 	background: url(../images/footer/adress.png) no-repeat;
 }
 .footer_phone {
-  	margin-bottom: 16px;
+  	margin-bottom: 18px;
 }
 .footer_phone::before {
 	content: "";
@@ -1001,7 +1028,7 @@ footer a:hover {
 	border: solid 1px #65baaf;
 }
 .footer_line_2 {
-  	padding-top: 14px;
+  	padding-top: 12px;
 }
 .copywrite {
 	padding-top: 9px;
@@ -1030,6 +1057,11 @@ footer a:hover {
   	background: url(../images/footer/facebook.png) no-repeat center;
 }
 
+@media screen and (min-width: 513px) {
+	.mail {
+		padding-bottom: 7px;
+	}
+}
 @media screen and (min-width: 576px) {
 	.video {
 		width: 576px;
@@ -1041,11 +1073,40 @@ footer a:hover {
 	}
 }
 @media screen and (min-width: 768px) {
-	.mobile_nav {
-		background-color: #65baaf;
+	.phone {
+		padding-left: 59px;
 	}
-	.navbar-light .navbar-nav .nav-link {
-		color: rgba(0,0,0,.5);
+	.mail {
+		padding-bottom: 0;
+		padding-top: 0;
+		border-bottom: none;
+	}
+	.phone::after {
+		content: "";
+		position: absolute;
+		top: -5px;
+		left: 31px;
+		width: 28px;
+		height: 28px;
+		background: url(../images/header/tel.png) no-repeat;
+	}
+	.mail {
+		padding-left: 60px;
+	}
+	.mail::after {
+		content: "";
+		position: absolute;
+		top: 8px;
+		left: 22px;
+		width: 28px;
+		height: 28px;
+		background: url(../images/header/email.png) no-repeat;
+	}
+	.lang::before {
+		top: -25px;
+	}
+	.lang::after {
+		top: -25px;
 	}
 }
 @media screen and (min-width: 992px) {
@@ -1093,9 +1154,13 @@ footer a:hover {
 	.section_5::after {
 		opacity: 1.0;
 	}
+	.head_adv {
+		margin-bottom: 17px;
+		padding-top: 27px;
+	}
 	.paragr_adv {
 		line-height: 32px;
-		margin-bottom: 45px;
+		margin-bottom: 47px;
 	}
 	.video {
 		width: 594px;
