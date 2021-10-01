@@ -13,269 +13,106 @@
 
 <body>
     <header>
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light align-items-start">
-                <div class="contacts_container col-12 col-sm-12 col-md-5 mb-1">
-                    <div class="row contacts_row align-items-center justify-content-between justify-content-md-end">
-                        <div class="dropdown tel_dropdown col-6 d-md-none">
-                            <button type="button" class="btn tel_dropdown_btn dropdown-toggle" data-toggle="dropdown">+38 (057) 738-30-93</button>
-                            <div class="dropdown-menu dd_menu_tel col-12">
-                                <a class="dropdown-item" href="tel:+380577383093">+38 (057) 738-30-93</a>
-                                <a class="dropdown-item" href="tel:+380577387693">+38 (057) 738-76-93</a>
+            <nav class="navbar navbar-expand-md navbar-light justify-content-between align-items-start">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-12 col-md-6 col-lg-5 contacts_container">
+                            <div class="row contacts_row align-items-center justify-content-between justify-content-md-end">
+                                <div class="dropdown tel_dropdown col-6 d-md-none">
+                                    <button type="button" class="btn tel_dropdown_btn dropdown-toggle" data-toggle="dropdown">+38 (057) 738-30-93</button>
+                                    <div class="dropdown-menu dd_menu_tel col-12">
+                                        <a class="dropdown-item" href="tel:+380577383093">+38 (057) 738-30-93</a>
+                                        <a class="dropdown-item" href="tel:+380577387693">+38 (057) 738-76-93</a>
+                                    </div>
+                                </div>
+                                <p class="col-6 col-md-12 phone d-none d-md-block">
+                                    <a href="tel:+380577383093">(057) 738 30 93, </a>
+                                    <a href="tel:+380577387693">(057) 738 76 93</a>
+                                </p>
+                                <p class="col-6 col-md-12 text-right text-md-left mail"><a
+                                        href="mailto:charivna@mozaika.com.ua">charivna@mozaika.com.ua</a>
+                                </p>
                             </div>
                         </div>
-                        <p class="col-6 col-md-12 phone d-none d-md-block">
-                            <a href="tel:+380577383093">(057) 738 30 93, </a>
-                            <a href="tel:+380577387693">(057) 738 76 93</a>
-                        </p>
-                        <p class="col-6 col-md-12 text-right text-md-left mail"><a
-                                href="mailto:charivna@mozaika.com.ua">charivna@mozaika.com.ua</a>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-12">
-                    <div class="row menu justify-content-between align-items-center">
-                            <button class="navbar-toggler col-auto" type="button" data-toggle="collapse"
-                                data-target="#collapsibleNavbar">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="col-9">
-                                <div class="row justify-content-between">
-                                    <div class="col-9 col-md-12 col-lg-7 mr-lg-1 order-md-2 order-lg-1 search_parent">
-                                        <div class="row justify-content-md-end">
-                                            <input class="col-7 col-sm-9 col-md-7 col-lg-8 col-xl-9 search" type="search" placeholder="Поиск" />
-                                            <button class="col-auto submit submit_desktop col"></button>
+                        <a class="col d-none d-md-block logo" href="#"></a>
+                        <div class="col-12 col-md-6 col-lg-5">
+                            <div class="row menu justify-content-between align-items-center">
+                                <button class="navbar-toggler col-auto" type="button" data-toggle="collapse"
+                                    data-target="#collapsibleNavbar">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="col-9 col-md-12">
+                                    <div class="row justify-content-between justify-content-md-end">
+                                        <div class="col-9 col-md-12 col-lg-7 mr-lg-1 order-md-2 order-lg-1 search_parent">
+                                            <div class="row justify-content-md-end">
+                                                <input class="col-7 col-sm-9 col-md-7 col-lg-8 col-xl-9 search mx-1 " type="search" placeholder="Поиск" />
+                                                <button class="col-auto submit submit_desktop mx-1 "></button>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="dropdown lang_container d-md-none">
-                                        <button type="button" class="btn dropdown-toggle lang" data-toggle="dropdown">
-                                            <span class="span_lang"></span>
-                                        </button>
-                                        <div class="dropdown-menu dropdown_menu_lang">
-                                            <a class="dropdown-item" href="#">укр</a>
-                                            <a class="dropdown-item" href="#">рус</a>
-                                            <a class="dropdown-item" href="#">eng</a>
+                                        <div class="dropdown lang_container d-md-none">
+                                            <button type="button" class="btn dropdown-toggle lang" data-toggle="dropdown">
+                                                <span class="span_lang"></span>
+                                            </button>
+                                            <div class="dropdown-menu dropdown_menu_lang">
+                                                <a class="dropdown-item" href="#">укр</a>
+                                                <a class="dropdown-item" href="#">рус</a>
+                                                <a class="dropdown-item" href="#">eng</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-lg-4 order-md-1 order-lg-2 language d-none d-md-block">
+                                            <div class="row justify-content-md-end justify-content-lg-center">
+                                                <a class="d-block lang-item" href="#">укр</a>
+                                                <a class="d-block lang-item active_lang" href="#">рус</a>
+                                                <a class="d-block lang-item" href="#">eng</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="collapse navbar-collapse col-12" id="collapsibleNavbar">
-                                <ul class="navbar-nav text-uppercase pl-md-1">
-                                    <li class="nav-item">
-                                        <a class="nav-link pl-2" href="#">О нас</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link pl-2" href="#">Продукция</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link pl-2" href="#">Волшебная жизнь</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link pl-2" href="#">АКЦИИ</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link pl-2" href="#">НОВОСТИ</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link pl-2" href="#">Клиентам</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link pl-2" href="#">Карьера с нами</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link pl-2" href="#">Контакты</a>
-                                    </li>
+                        </div>
+                        <div class="collapse navbar-collapse mt-md-3" id="collapsibleNavbar">
+                            <div class="col-12">
+                                <ul class="navbar-nav justify-content-md-between text-uppercase pl-md-1">
+                                    <div class="col-lg-5 nav_column">
+                                        <li class="nav-item">
+                                            <a class="nav-link pl-2 px-md-0 px-lg-2" href="#">О нас</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link pl-2 px-md-0 px-lg-2" href="#">Продукция</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link pl-2 px-md-0 px-lg-2" href="#">Волшебная жизнь</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link pl-2 px-md-0 px-lg-2" href="#">АКЦИИ</a>
+                                        </li>
+                                    </div>
+                                    <div class="col-lg-5 nav_column d-flex flex-column flex-md-row justify-content-md-end">
+                                        <li class="nav-item">
+                                            <a class="nav-link pl-2 px-md-0 px-lg-2" href="#">НОВОСТИ</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link pl-2 px-md-0 px-lg-2" href="#">Клиентам</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link pl-2 px-md-0 px-lg-2" href="#">Карьера с нами</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link pl-2 px-md-0 px-lg-2" href="#">Контакты</a>
+                                        </li>
+                                    </div>
                                 </ul>
                             </div>
-                      
-                        
-                        
-                        
+                            
+                        </div>
                     </div>
                 </div>
             </nav>
-            <div class="logo col d-flex justify-content-center d-md-none">
+            <div class="logo col d-flex d-md-none justify-content-center">
                 <img src="images/logo.png" alt="logo" />
             </div>
         </div>
-
-        <div class="container">
-            <div class="row desctop_header mb-lg-4">
-                <div class="left_col_header col-md-5 d-none d-md-block">
-                    <div class="row contacts justify-content-end">
-                        <p class="col-md-12 phone"><a href="tel:+380577383093">(057) 738 30 93, </a>
-                            <a href="tel:+380577387693">(057) 738 76 93</a>
-                        </p>
-                        <p class="col-md-12 mail"><a href="mailto:charivna@mozaika.com.ua">charivna@mozaika.com.ua</a>
-                        </p>
-                    </div>
-                </div>
-                <a class="col d-none d-md-block logo_desktop" href="#"></a>
-                <div class="right_col_header col-md-5 d-none d-md-block">
-                    <div class="row justify-content-end">
-                        <div class="col-md-12 col-lg-7 mr-lg-1 order-md-2 order-lg-1 search_parent">
-                            <div class="row justify-content-end">
-                                <input class="col-md-7 col-lg-8 col-xl-9 search" type="search" placeholder="Поиск" />
-                                <button class="col-auto submit submit_desktop col"></button>
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-lg-4 pt-lg-1 order-md-1 order-lg-2 language">
-                            <div class="row justify-content-md-end justify-content-lg-center">
-                                <a class="d-block lang-item" href="#">укр</a>
-                                <a class="d-block lang-item active_lang" href="#">рус</a>
-                                <a class="d-block lang-item" href="#">eng</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-between">
-                <nav class="col-lg-5 navigation d-none d-lg-block">
-                    <div class="row">
-                        <a class="d-block" href="#">О нас</a>
-                        <a class="d-block" href="#">Продукция</a>
-                        <a class="d-block" href="#">Волшебная жизнь</a>
-                        <a class="d-block" href="#">АКЦИИ</a>
-                    </div>
-                </nav>
-                <nav class="col-lg-5 navigation d-none d-lg-block">
-                    <div class="row justify-content-end">
-                        <a class="d-block" href="#">НОВОСТИ</a>
-                        <a class="d-block" href="#">Клиентам</a>
-                        <a class="d-block" href="#">Карьера с нами</a>
-                        <a class="d-block" href="#">Контакты</a>
-                    </div>
-                </nav>
-            </div>
-        </div>
     </header>
-
-    <!--  <header>
-            <div class="container-fluid mobile_nav d-lg-none">
-                <nav class="navbar navbar-expand-lg navbar-light align-items-start">
-                    <div class="col-4 col-sm-3 d-md-none">
-                        <div class="row contacts justify-content-between">
-                            <div class="dropdown tel_container">
-                                <button type="button" class="btn dropdown-toggle tel" data-toggle="dropdown"></button>
-                                <div class="dropdown-menu dd_menu_phonenumber">
-                                    <a class="dropdown-item" href="tel:+380577383093">+38 (057) 738-30-93</a>
-                                    <a class="dropdown-item" href="tel:+380577387693">+38 (057) 738-76-93</a>
-                                </div>
-                            </div>
-                            <a class="email" href="mailto:charivna@mozaika.com.ua"></a>
-                        </div>
-                    </div>
-
-                    <div class="col-6 col-sm-5">
-                        <div class="row menu justify-content-between">
-                            <div class="dropdown search_container d-md-none">
-                                <button type="button" class="btn dropdown-toggle submit" data-toggle="dropdown"></button>
-                                <div class="dropdown-menu row">
-                                    <input class="col-7 search" type="search" placeholder="Поиск" />
-                                    <button class="col-2 submit"></button>
-                                </div>
-                            </div>
-                            <div class="dropdown lang_container d-md-none">
-                                <button type="button" class="btn dropdown-toggle lang" data-toggle="dropdown">
-                                    <span class="span_lang"></span>
-                                </button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">укр</a>
-                                    <a class="dropdown-item" href="#">рус</a>
-                                    <a class="dropdown-item" href="#">eng</a>
-                                </div>
-                            </div>
-                            <button class="navbar-toggler ml-3 ml-sm-0" type="button" data-toggle="collapse"
-                                data-target="#collapsibleNavbar">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                                <ul class="navbar-nav text-uppercase text-right text-md-left pl-md-1">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">О нас</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Продукция</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Волшебная жизнь</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">АКЦИИ</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">НОВОСТИ</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Клиентам</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Карьера с нами</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Контакты</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-                <div class="logo col d-flex justify-content-center d-md-none">
-                    <img src="images/logo.png" alt="logo" />
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="row desctop_header mb-lg-4">
-                    <div class="left_col_header col-md-5 d-none d-md-block">
-                        <div class="row contacts justify-content-end">
-                            <p class="col-md-12 phone"><a href="tel:+380577383093">(057) 738 30 93, </a>
-                                <a href="tel:+380577387693">(057) 738 76 93</a>
-                            </p>
-                            <p class="col-md-12 mail"><a href="mailto:charivna@mozaika.com.ua">charivna@mozaika.com.ua</a>
-                            </p>
-                        </div>
-                    </div>
-                    <a class="col d-none d-md-block logo_desktop" href="#"></a>
-                    <div class="right_col_header col-md-5 d-none d-md-block">
-                        <div class="row justify-content-end">
-                            <div class="col-md-12 col-lg-7 mr-lg-1 order-md-2 order-lg-1 search_parent">
-                                <div class="row justify-content-end">
-                                    <input class="col-md-7 col-lg-8 col-xl-9 search" type="search" placeholder="Поиск" />
-                                    <button class="col-auto submit submit_desktop col"></button>
-                                </div>
-                            </div>
-                            <div class="col-md-12 col-lg-4 pt-lg-1 order-md-1 order-lg-2 language">
-                                <div class="row justify-content-md-end justify-content-lg-center">
-                                    <a class="d-block lang-item" href="#">укр</a>
-                                    <a class="d-block lang-item active_lang" href="#">рус</a>
-                                    <a class="d-block lang-item" href="#">eng</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-between">
-                    <nav class="col-lg-5 navigation d-none d-lg-block">
-                        <div class="row">
-                            <a class="d-block" href="#">О нас</a>
-                            <a class="d-block" href="#">Продукция</a>
-                            <a class="d-block" href="#">Волшебная жизнь</a>
-                            <a class="d-block" href="#">АКЦИИ</a>
-                        </div>
-                    </nav>
-                    <nav class="col-lg-5 navigation d-none d-lg-block">
-                        <div class="row justify-content-end">
-                            <a class="d-block" href="#">НОВОСТИ</a>
-                            <a class="d-block" href="#">Клиентам</a>
-                            <a class="d-block" href="#">Карьера с нами</a>
-                            <a class="d-block" href="#">Контакты</a>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </header> -->
 
     <main>
         <section class="section_1 d-none d-md-block">
