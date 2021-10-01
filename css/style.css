@@ -35,6 +35,9 @@ html {
 .btn:focus {
 	box-shadow: 0 0 9px 0px #65baaf;
 }
+button {
+	cursor: pointer;
+}
 button:focus {
     outline: none;
     outline: none;
