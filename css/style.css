@@ -263,8 +263,8 @@ ul {
 	border: none;
 	z-index: -1;
 }
-.tel_dropdown_btn:hover,
-.contacts a:hover,
+.phone a:hover,
+.mail a:hover,
 .lang-item:hover {
 	color: #65baaf;
 }
