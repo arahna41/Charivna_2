@@ -39,8 +39,8 @@ button {
 	cursor: pointer;
 }
 button:focus {
-    outline: none;
-    outline: none;
+	outline: none;
+	outline: none;
 }
 h2 {
 	color: #65baaf;
@@ -78,7 +78,7 @@ ul {
 }
 .contacts_container {
 	z-index: 1;
-    background-color: #ffffff;
+	background-color: #ffffff;
 }
 .contacts_row a {
 	font-size: calc((100vw - 768px) / (1920 - 768) * (18 - 15) + 15px);
@@ -87,7 +87,7 @@ ul {
 	transition: color 0.2s ease-in-out;
 }
 .dropdown_menu_search {
-    left: -105px;
+	left: -105px;
 }
 .dropdown-item {
 	background-color: #ffffff;
@@ -102,9 +102,9 @@ ul {
 .tel_dropdown {
 	border-bottom: solid 1px #65baaf;
 	padding-right: 0;
-    padding-left: 0;
-    background-color: #c7e7e3;
-    border-right: solid 2px #65baaf;
+	padding-left: 0;
+	background-color: #c7e7e3;
+	border-right: solid 2px #65baaf;
 }
 .tel_dropdown_btn {
 	font-family: "PF Din Text Comp Pro Thin";
@@ -113,17 +113,17 @@ ul {
 	text-decoration: none;
 	transition: color 0.2s ease-in-out;
 	width: 100%;
-    padding-left: 0;
-    padding-right: 0;
+	padding-left: 0;
+	padding-right: 0;
 }
 .mail {
 	position: relative;
 	padding-bottom: 6px;
-    padding-top: 5px;
-    border-bottom: solid 1px #65baaf;
-    margin-bottom: 0px;
+	padding-top: 5px;
+	border-bottom: solid 1px #65baaf;
+	margin-bottom: 0px;
 	background-color: #c7e7e3;
-    border-right: solid 2px #65baaf;
+	border-right: solid 2px #65baaf;
 	z-index: 1;
 }
 .mail a {
@@ -154,7 +154,7 @@ ul {
 	border-radius: 50%;
 	cursor: pointer;
 	top: 3px;
-    left: 5px;
+	left: 5px;
 }
 .submit::before {
 	position: absolute;
@@ -209,8 +209,8 @@ ul {
 }
 .span_lang::after {
 	content: "ru";
-    position: absolute;
-    padding-left: 8px;
+	position: absolute;
+	padding-left: 8px;
 	top: -9px;
 	left: -10px;
 	z-index: 5;
@@ -220,8 +220,8 @@ ul {
 }
 .dropdown_menu_lang {
 	min-width: 4rem;
-    text-transform: uppercase;
-    left: -25px;
+	text-transform: uppercase;
+	left: -25px;
 }
 .language {
 	padding-top: 11px;
@@ -276,14 +276,14 @@ ul {
 	background-color: #ffffffa2;
 }
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-    background-color: #b2dcd790;
+	background-color: #b2dcd790;
 }
 .nav-link {
 	padding: .8rem 1rem;
 	font-size: calc((100vw - 768px) / (1920 - 320) * (16 - 14) + 14px);
 }
 .navbar-toggler:focus, .navbar-toggler:hover {
-    box-shadow: 0 0 9px 0px #65baaf;
+	box-shadow: 0 0 9px 0px #65baaf;
 }
 .logo {
 	padding: 5px 0;
@@ -423,13 +423,13 @@ ul {
 	width: 744px;
 	position: relative;
 	left: -46px;
-    top: -1px;
+	top: -1px;
 	background: url(../images/section_3/book.png) no-repeat center;
 }
 .book_img img {
 	position: relative;
-    top: -37px;
-    left: 10px;
+	top: -37px;
+	left: 10px;
 }
 .decoration_block {
   	position: relative;
@@ -437,9 +437,9 @@ ul {
 .bookmark {
 	width: 147px;
 	height: 49px;
-    padding: 11px 0px 0 7px;
+	padding: 11px 0px 0 7px;
 	top: -37px;
-    left: 13px;
+	left: 13px;
 	z-index: -2;
 	color: #ffffff;
 	font-family: "PF Din Text Comp Pro Thin";
@@ -449,11 +449,11 @@ ul {
 .bookmark::before {
 	position: absolute;
 	content: "ТМ «ЧАРІВНА МОЗАЇКА»";
-    padding: 14px 0px 0 22px;
+	padding: 14px 0px 0 22px;
 	width: 181px;
 	height: 245px;
 	top: -8px;
-    left: 114px;
+	left: 114px;
 	z-index: -2;
 	font-weight: 500;
 	background: url(../images/section_3/bookmark1.png) no-repeat center;
@@ -465,7 +465,7 @@ ul {
 	height: 42px;
 	padding: 12px 0px 0 28px;
 	top: -1px;
-    right: 149px;
+	right: 149px;
 	z-index: -2;
 	background: url(../images/section_3/bookmark3.png) no-repeat center;
 }
@@ -475,7 +475,7 @@ ul {
 	width: 39px;
 	height: 194px;
 	top: -69px;
-    left: 40.5%;
+	left: 40.5%;
 	z-index: -1;
 	background: url(../images/section_3/decoration1.png) no-repeat center;
 }
@@ -485,7 +485,7 @@ ul {
 	width: 66px;
 	height: 64px;
 	top: 7px;
-    right: 50px;
+	right: 50px;
 	z-index: -1;
 	transform: translate(-50%, -50%);
 	background: url(../images/section_3/decoration2.png) no-repeat center;
@@ -501,8 +501,8 @@ ul {
 	font-size: 18px;
 	font-weight: 500;
 	position: relative;
-    top: -42px;
-    left: 7px;
+	top: -42px;
+	left: 7px;
 }
 .head_book {
 	position: relative;
@@ -517,7 +517,7 @@ ul {
 	width: 45px;
 	height: 8px;
 	bottom: -38px;
-    left: 50%;
+	left: 50%;
 	transform: translate(-50%, -50%);
 	background: url(../images/section_3/line.png) no-repeat center;
 }
@@ -545,7 +545,7 @@ ul {
 	width: 32px;
 	height: 31px;
 	bottom: -16px;
-    right: -17px;
+	right: -17px;
 	transform: translate(-50%, -50%);
 	background: url(../images/section_3/book_back.png) no-repeat center;
 }
@@ -559,7 +559,7 @@ ul {
 	width: 32px;
 	height: 31px;
 	bottom: -16px;
-    left: 32px;
+	left: 32px;
 	transform: translate(-50%, -50%);
 	background: url(../images/section_3/book_next.png) no-repeat center;
 }
@@ -579,7 +579,7 @@ ul {
 	position: absolute;
 	content: "";
 	bottom: 43px;
-    left: -21px;
+	left: -21px;
 	width: 17px;
 	height: 13px;
 	background: url(../images/section_3/back.png) no-repeat center;
@@ -588,7 +588,7 @@ ul {
 	position: absolute;
 	content: "";
 	bottom: 43px;
-    right: -21px;
+	right: -21px;
 	width: 17px;
 	height: 13px;
 	background: url(../images/section_3/next.png) no-repeat center;
