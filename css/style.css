@@ -657,7 +657,7 @@ ul {
 	overflow: hidden;
 }
 .section_5 .container {
-  	margin-bottom: 58px;
+  	margin-bottom: 77px;
 }
 .section_5::after {
 	position: absolute;
@@ -680,16 +680,20 @@ ul {
 	font-size: calc((100vw - 320px) / (1920 - 320) * (24 - 18) + 18px);
 	margin-bottom: 23px;
 }
+.video_parent {
+	padding: 0;
+}
 .video {
 	margin-bottom: 19px;
 	margin-top: 12px;
 	position: relative;
 	width: 100%;
 	height: 240px;
+	margin: 0;
 }
 .video iframe {
 	width: 100%;
-	height: 240px;
+	height: 100%;
 	border: 0;
 }
 .line_bottom::after {
@@ -971,12 +975,8 @@ footer a:hover {
 }
 @media screen and (min-width: 576px) {
 	.video {
-		width: 576px;
+		width: 540px;
 		height: 310px;
-	}
-	.video iframe {
-		width: 576px;
-		height: 295px;
 	}
 }
 @media screen and (min-width: 765px) {
@@ -1087,6 +1087,10 @@ footer a:hover {
 		border-radius: 50%;
 		pointer-events: auto
 	}
+	.video {
+		width: 600px;
+		height: 350px;
+	}
 }
 @media screen and (min-width: 992px) {
 	.container {
@@ -1196,7 +1200,7 @@ footer a:hover {
 	}
 	.paragr_adv {
 		line-height: 32px;
-		margin-bottom: 47px;
+		margin-bottom: 58px;
 	}
 	.video {
 		width: 594px;
@@ -1243,6 +1247,9 @@ footer a:hover {
 		margin-left: -33px;
 		padding-left: 0;
 		padding-right: 0;
+	}
+	.video_parent {
+		padding-left: 28px;
 	}
 }
 @media screen and (min-width: 1600px) {
