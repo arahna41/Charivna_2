@@ -796,8 +796,9 @@ input::placeholder, textarea::placeholder {
 	font-size: 22px;
 }
 .message {
-  	padding: 6px 12px 50px 8px;
-	max-height: 106px;
+  	padding: 6px 12px 6px 8px;
+	height: 106px;
+	resize: none;
 }
 .input_submit {
 	padding: 5px 35px 5px 35px;
