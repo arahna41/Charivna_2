@@ -286,6 +286,7 @@ ul {
 	color: #65baaf;
 }
 .navbar-light .navbar-nav .nav-link {
+	letter-spacing: 1.5px;
 	color: #65baaf;
 	background-color: #ffffffc0;
 }
