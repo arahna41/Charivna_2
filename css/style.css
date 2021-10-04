@@ -365,7 +365,7 @@ ul {
 }
 .descr_header {
 	font-size: calc((100vw - 768px) / (1920 - 768) * (72 - 16) + 16px);
-	letter-spacing: 10px;
+	letter-spacing: calc((100vw - 768px) / (1920 - 768) * (10 - 3) + 3px);
 }
 .descr_line2 {
 	font-family: "FlowRegular";
