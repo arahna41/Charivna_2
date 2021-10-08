@@ -417,7 +417,7 @@ ul {
 /* section_3 */
 .section_3 .container {
 	padding-top: 48px;
-	padding-bottom: 86px;
+	padding-bottom: 75px;
 	position: relative;
 }
 .section_3 .container::after {
@@ -435,84 +435,86 @@ ul {
 	margin-bottom: 35px;
 	letter-spacing: 0.65px;
 }
-.book {
-	height: 427px;
+.book_background {
+	height: 426px;
+	position: relative;
+}
+.book_background::before {
+	position: absolute;
+	content: "";
+	background: url(../images/section_3/book.png) no-repeat;
 	width: 744px;
-	padding-top: 10px;
-	position: relative;
-	left: -46px;
-	top: -1px;
-	background: url(../images/section_3/book.png) no-repeat center;
+	height: 427px;
+	left: -62px;
+	top: -12px;
 }
-.book_img img {
-	position: relative;
-	top: -37px;
-	left: 10px;
-}
-.decoration_block {
-	position: relative;
-}
-.bookmark {
-	width: 147px;
-	height: 49px;
-	padding: 11px 0px 0 7px;
-	top: -37px;
-	left: 13px;
-	z-index: -2;
+.nav-tabs a {
 	color: #ffffff;
-	
-	font-size: 18px;
-	background: url(../images/section_3/bookmark2.png) no-repeat center;
+	text-decoration: none;
+	transition: padding-top 0.2s ease-in-out;
 }
-.bookmark::before {
-	position: absolute;
-	content: "ТМ «ЧАРІВНА МОЗАЇКА»";
+.first_bookmark {
+	background: url(../images/section_3/bookmark1.png) no-repeat;
+	height: 55px;
+}
+.first_bookmark a {
+	padding: 13px 23px 0px 22px;
 	font-family: "PF Din Text Comp Pro";
-	padding: 14px 0px 0 22px;
-	width: 181px;
-	height: 245px;
-	top: -8px;
-	left: 114px;
-	z-index: -2;
 	font-weight: 500;
-	background: url(../images/section_3/bookmark1.png) no-repeat center;
+	letter-spacing: 0.8px;
 }
-.bookmark::after {
-	position: absolute;
-	content: "ТМ «Private Label»";
-	font-family: "PF Din Text Comp Pro Thin";
-	width: 155px;
-	height: 42px;
-	padding: 12px 0px 0 28px;
-	top: -1px;
-	right: 149px;
-	z-index: -2;
-	background: url(../images/section_3/bookmark3.png) no-repeat center;
+.second_bookmark {
+	background: url(../images/section_3/bookmark2.png) no-repeat;
+	height: 48px;
 }
-.book::before {
+.second_bookmark a {
+	padding: 13px 23px 0px 38px;
+	letter-spacing: 1.6px;
+}
+.third_bookmark {
+	background: url(../images/section_3/bookmark3.png) no-repeat;
+	height: 49px;
+	margin-left: -4px;
+}
+.third_bookmark a {
+	padding: 13px 23px 0px 27px;
+	letter-spacing: 1.25px;
+}
+.nav-tabs a:hover {
+	padding-top: 6px
+}
+.nav-tabs::before {
 	position: absolute;
 	content: "";
 	width: 39px;
 	height: 194px;
-	top: -69px;
-	left: 40.5%;
-	z-index: -1;
+	top: -25px;
+	left: 31.4%;
+	z-index: 0;
 	background: url(../images/section_3/decoration1.png) no-repeat center;
 }
-.book::after {
+.nav-tabs::after {
 	position: absolute;
 	content: "";
 	width: 66px;
 	height: 64px;
-	top: 7px;
-	right: 50px;
-	z-index: -1;
+	top: 51px;
+	right: 33px;
+	z-index: 0;
 	transform: translate(-50%, -50%);
 	background: url(../images/section_3/decoration2.png) no-repeat center;
+}
+.tab-pane {
+	margin-top: -12px;
 }
 .book_img {
 	padding-top: 51px;
 	margin-bottom: 33px;
+}
+.book_img img {
+	position: relative;
+	top: -36px;
+	left: -1px;
 }
 .book_details {
 	opacity: 0.7;
@@ -523,12 +525,19 @@ ul {
 	position: relative;
 	top: -42px;
 	left: 7px;
+	letter-spacing: 0.4px;
+	transition: all 0.2s ease-in-out;
+}
+.book_details:hover {
+	color: #65baaf;
+	text-decoration: none;
+	cursor: pointer;
 }
 .head_book {
 	position: relative;
 	color: #caa977;
 	font-size: 36px;
-	font-weight: 500;
+	letter-spacing: 0.7px;
 }
 .head_book::after {
 	position: absolute;
@@ -547,6 +556,12 @@ ul {
 .text2 {
 	line-height: 27px;
 }
+.next,
+.back {
+	padding: 7px 0;
+	opacity: 1;
+	transition: opacity 0.2s ease-in-out;
+}
 .next p,
 .back p {
 	font-family: "PF Din Text Comp Pro";
@@ -554,31 +569,51 @@ ul {
 	font-weight: 500;
 	position: relative;
 }
+.back:hover {
+	opacity: 0.7;
+	text-decoration: none;
+	color: #caa977;
+}
+.next:hover {
+	opacity: 0.7;
+	text-decoration: none;
+	color: #65baaf;
+}
+.back:focus {
+	opacity: 0.9;
+	text-decoration: none;
+	color: #caa977;
+}
+.next:focus {
+	opacity: 0.9;
+	text-decoration: none;
+	color: #65baaf;
+}
 .back {
 	color: #caa977;
-	padding-right: 43px;
+	padding-right: 45px;
 }
 .back::after {
 	position: absolute;
 	content: "";
 	width: 32px;
 	height: 31px;
-	bottom: -16px;
-	right: -17px;
+	bottom: -11px;
+	right: -14px;
 	transform: translate(-50%, -50%);
 	background: url(../images/section_3/book_back.png) no-repeat center;
 }
 .next {
 	color: #65baaf;
-	padding-left: 58px;
+	padding-left: 55px;
 }
 .next::after {
 	position: absolute;
 	content: "";
 	width: 32px;
 	height: 31px;
-	bottom: -16px;
-	left: 32px;
+	bottom: -11px;
+	left: 29px;
 	transform: translate(-50%, -50%);
 	background: url(../images/section_3/book_next.png) no-repeat center;
 }
@@ -592,14 +627,12 @@ ul {
 .carousel-control-prev-icon {
 	background: url(../images/section_3/back.png) no-repeat center;
 	position: relative;
-	top: 40px;
-	left: 0;
+	top: 58px;
 }
 .carousel-control-next-icon {
 	background: url(../images/section_3/next.png) no-repeat center;
 	position: relative;
-	top: 40px;
-	right: 0;
+	top: 58px;
 }
 .carousel-caption {
 	right: 0%;
@@ -643,7 +676,7 @@ ul {
 	opacity: 0.3;
 }
 .h2_sect_4 {
-	margin-bottom: 33px;
+	margin-bottom: 30px;
 	z-index: 2;
 }
 .parent_img {
@@ -669,7 +702,7 @@ ul {
 	overflow: hidden;
 }
 .section_5 .container {
-	margin-bottom: 77px;
+	padding-bottom: 77px;
 }
 .section_5::after {
 	position: absolute;
@@ -947,7 +980,7 @@ footer a:hover {
 	border: solid 1px #65baaf;
 }
 .footer_line_2 {
-	padding-top: 11px;
+	padding-top: 12px;
 }
 .copywrite {
 	padding-top: 9px;
@@ -1187,10 +1220,11 @@ footer a:hover {
 		margin-bottom: 101px;
 	}
 	.headling_sec_3 {
-		margin-bottom: 75px;
+		margin-bottom: 41px;
 	}
 	.carousel_inner_cupcake {
 		width: 202px;
+		margin-top: 33px;
 	}
 	.carousel-caption {
 		left: 7%;
@@ -1267,6 +1301,9 @@ footer a:hover {
 	.footer_contacts_parent {
 		padding-left: 66px !important;
 	}
+	.book_background::before {
+		left: -43px;
+	}
 	.cupcake_img {
 		position: relative;
 		margin-top: -10px;
@@ -1288,3 +1325,11 @@ footer a:hover {
 		height: 593px;
 	}
 }
+
+
+
+
+
+
+
+
